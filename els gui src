@@ -1,0 +1,1442 @@
+
+if not game:IsLoaded() then
+	game.Loaded:Wait()
+end
+repeat wait() until game.Players.LocalPlayer.Character:FindFirstChild("FULLY_LOADED_CHAR")
+
+
+
+--// MAIN GUI
+local Main = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local TabBar = Instance.new("Frame")
+local Player = Instance.new("TextButton")
+local Shadow = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Misc = Instance.new("TextButton")
+local Shadow_2 = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local Main_2 = Instance.new("TextButton")
+local Shadow_3 = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local Useful = Instance.new("TextButton")
+local Shadow_4 = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local Topbar = Instance.new("Frame")
+local czopeksgui = Instance.new("TextLabel")
+local CzopekCredit = Instance.new("TextLabel")
+local CloseGUI = Instance.new("TextButton")
+local Shadow_5 = Instance.new("Frame")
+local TextLabel_5 = Instance.new("TextLabel")
+local PlayerTab = Instance.new("Frame")
+local PlayerTabBar = Instance.new("ImageLabel")
+local PlayerTabName = Instance.new("TextLabel")
+local TeleportToPlayer = Instance.new("TextButton")
+local Shadow_6 = Instance.new("Frame")
+local TextLabel_6 = Instance.new("TextLabel")
+local PlayerName = Instance.new("TextBox")
+local UpdateCash = Instance.new("TextButton")
+local Shadow_7 = Instance.new("Frame")
+local TextLabel_7 = Instance.new("TextLabel")
+local Money = Instance.new("TextLabel")
+local MainTab = Instance.new("Frame")
+local MainTabbar = Instance.new("ImageLabel")
+local MainTabName = Instance.new("TextLabel")
+local AutoDrop = Instance.new("TextButton")
+local Shadow_8 = Instance.new("Frame")
+local TextLabel_8 = Instance.new("TextLabel")
+local CashAura = Instance.new("TextButton")
+local Shadow_9 = Instance.new("Frame")
+local TextLabel_9 = Instance.new("TextLabel")
+local FPSBooster = Instance.new("TextButton")
+local Shadow_10 = Instance.new("Frame")
+local TextLabel_10 = Instance.new("TextLabel")
+local StartCrasher = Instance.new("TextButton")
+local Shadow_11 = Instance.new("Frame")
+local TextLabel_11 = Instance.new("TextLabel")
+local AutoDropOnOffBackground = Instance.new("Frame")
+local AutoDropOnOff = Instance.new("TextLabel")
+local CashAuraOnOffBackGround = Instance.new("Frame")
+local CashAuraOnOff = Instance.new("TextLabel")
+local Fly = Instance.new("TextButton")
+local Shadow_12 = Instance.new("Frame")
+local TextLabel_12 = Instance.new("TextLabel")
+local Speed = Instance.new("TextButton")
+local Shadow_13 = Instance.new("Frame")
+local TextLabel_13 = Instance.new("TextLabel")
+local DeleteCash = Instance.new("TextButton")
+local Shadow_14 = Instance.new("Frame")
+local TextLabel_14 = Instance.new("TextLabel")
+local MiscTab = Instance.new("Frame")
+local MiscTabBar = Instance.new("ImageLabel")
+local MiscTabName = Instance.new("TextLabel")
+local AdminBase = Instance.new("TextButton")
+local Shadow_15 = Instance.new("Frame")
+local TextLabel_15 = Instance.new("TextLabel")
+local Bank = Instance.new("TextButton")
+local Shadow_16 = Instance.new("Frame")
+local TextLabel_16 = Instance.new("TextLabel")
+local Basketball = Instance.new("TextButton")
+local Shadow_17 = Instance.new("Frame")
+local TextLabel_17 = Instance.new("TextLabel")
+local SecretArea = Instance.new("TextButton")
+local Shadow_18 = Instance.new("Frame")
+local TextLabel_18 = Instance.new("TextLabel")
+local Club = Instance.new("TextButton")
+local Shadow_19 = Instance.new("Frame")
+local TextLabel_19 = Instance.new("TextLabel")
+local TrainTrack = Instance.new("TextButton")
+local Shadow_20 = Instance.new("Frame")
+local TextLabel_20 = Instance.new("TextLabel")
+local Prison = Instance.new("TextButton")
+local Shadow_21 = Instance.new("Frame")
+local TextLabel_21 = Instance.new("TextLabel")
+local UsefulTab = Instance.new("Frame")
+local UsefulTabBar = Instance.new("ImageLabel")
+local PlayerTabName_2 = Instance.new("TextLabel")
+local FpsCap5 = Instance.new("TextButton")
+local Shadow_22 = Instance.new("Frame")
+local TextLabel_22 = Instance.new("TextLabel")
+local FpsCap30 = Instance.new("TextButton")
+local Shadow_23 = Instance.new("Frame")
+local TextLabel_23 = Instance.new("TextLabel")
+local setFps = Instance.new("TextButton")
+local Shadow_24 = Instance.new("Frame")
+local TextLabel_24 = Instance.new("TextLabel")
+local fpsamount = Instance.new("TextBox")
+local PlayerTabName_3 = Instance.new("TextLabel")
+Main.Name = "Main"
+Main.Parent = game:GetService("CoreGui")
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = Main
+MainFrame.Active = true
+MainFrame.BackgroundColor3 = Color3.fromRGB(28, 29, 28)
+MainFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainFrame.BorderSizePixel = 0
+MainFrame.Draggable = true
+MainFrame.Position = UDim2.new(0.27520436, -157, 0.300435424, -54)
+MainFrame.Size = UDim2.new(0, 494, 0, 275)
+TabBar.Name = "TabBar"
+TabBar.Parent = MainFrame
+TabBar.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+TabBar.BorderSizePixel = 0
+TabBar.Position = UDim2.new(-9.92431305e-05, 0, 0.120691374, 0)
+TabBar.Size = UDim2.new(0, 102, 0, 241)
+Player.Name = "Player"
+Player.Parent = TabBar
+Player.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Player.BorderSizePixel = 0
+Player.Position = UDim2.new(0.0588235296, 0, 0.234439835, 0)
+Player.Size = UDim2.new(0, 89, 0, 42)
+Player.ZIndex = 2
+Player.Font = Enum.Font.GothamSemibold
+Player.Text = ""
+Player.TextColor3 = Color3.fromRGB(255, 255, 255)
+Player.TextScaled = true
+Player.TextSize = 14.000
+Player.TextWrapped = true
+Shadow.Name = "Shadow"
+Shadow.Parent = Player
+Shadow.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Shadow.BorderSizePixel = 0
+Shadow.Size = UDim2.new(1, 0, 1, 4)
+TextLabel.Parent = Player
+TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel.Size = UDim2.new(1, -20, 1, -20)
+TextLabel.ZIndex = 2
+TextLabel.Font = Enum.Font.GothamSemibold
+TextLabel.Text = "Player"
+TextLabel.TextColor3 = Color3.fromRGB(148, 175, 150)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+Misc.Name = "Misc"
+Misc.Parent = TabBar
+Misc.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Misc.BorderSizePixel = 0
+Misc.Position = UDim2.new(0.0588235296, 0, 0.425311208, 0)
+Misc.Size = UDim2.new(0, 89, 0, 42)
+Misc.ZIndex = 2
+Misc.Font = Enum.Font.GothamSemibold
+Misc.Text = ""
+Misc.TextColor3 = Color3.fromRGB(255, 255, 255)
+Misc.TextScaled = true
+Misc.TextSize = 14.000
+Misc.TextWrapped = true
+Shadow_2.Name = "Shadow"
+Shadow_2.Parent = Misc
+Shadow_2.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Shadow_2.BorderSizePixel = 0
+Shadow_2.Size = UDim2.new(1, 0, 1, 4)
+TextLabel_2.Parent = Misc
+TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_2.Size = UDim2.new(1, -20, 1, -20)
+TextLabel_2.ZIndex = 2
+TextLabel_2.Font = Enum.Font.GothamSemibold
+TextLabel_2.Text = "Teleports"
+TextLabel_2.TextColor3 = Color3.fromRGB(148, 175, 150)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+Main_2.Name = "Main"
+Main_2.Parent = TabBar
+Main_2.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Main_2.BorderSizePixel = 0
+Main_2.Position = UDim2.new(0.0588235296, 0, 0.0435684659, 0)
+Main_2.Size = UDim2.new(0, 89, 0, 42)
+Main_2.ZIndex = 2
+Main_2.Font = Enum.Font.GothamSemibold
+Main_2.Text = ""
+Main_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main_2.TextScaled = true
+Main_2.TextSize = 14.000
+Main_2.TextWrapped = true
+Shadow_3.Name = "Shadow"
+Shadow_3.Parent = Main_2
+Shadow_3.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Shadow_3.BorderSizePixel = 0
+Shadow_3.Size = UDim2.new(1, 0, 1, 4)
+TextLabel_3.Parent = Main_2
+TextLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_3.Size = UDim2.new(1, -20, 1, -20)
+TextLabel_3.ZIndex = 2
+TextLabel_3.Font = Enum.Font.GothamSemibold
+TextLabel_3.Text = "Main"
+TextLabel_3.TextColor3 = Color3.fromRGB(148, 175, 150)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+Useful.Name = "Useful"
+Useful.Parent = TabBar
+Useful.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Useful.BorderSizePixel = 0
+Useful.Position = UDim2.new(0.0588235296, 0, 0.616182566, 0)
+Useful.Size = UDim2.new(0, 89, 0, 42)
+Useful.ZIndex = 2
+Useful.Font = Enum.Font.GothamSemibold
+Useful.Text = ""
+Useful.TextColor3 = Color3.fromRGB(255, 255, 255)
+Useful.TextScaled = true
+Useful.TextSize = 14.000
+Useful.TextWrapped = true
+Shadow_4.Name = "Shadow"
+Shadow_4.Parent = Useful
+Shadow_4.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Shadow_4.BorderSizePixel = 0
+Shadow_4.Size = UDim2.new(1, 0, 1, 4)
+TextLabel_4.Parent = Useful
+TextLabel_4.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_4.Size = UDim2.new(1, -20, 1, -20)
+TextLabel_4.ZIndex = 2
+TextLabel_4.Font = Enum.Font.GothamSemibold
+TextLabel_4.Text = "IMPORTANT"
+TextLabel_4.TextColor3 = Color3.fromRGB(148, 175, 150)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+Topbar.Name = "Topbar"
+Topbar.Parent = MainFrame
+Topbar.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Topbar.BorderSizePixel = 0
+Topbar.Position = UDim2.new(0.000377038494, 0, -0.00536616147, 0)
+Topbar.Size = UDim2.new(0, 493, 0, 34)
+czopeksgui.Name = "czopeksgui"
+czopeksgui.Parent = Topbar
+czopeksgui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+czopeksgui.BackgroundTransparency = 1.000
+czopeksgui.Position = UDim2.new(-0.0148564894, 0, 0.0738495737, 0)
+czopeksgui.Size = UDim2.new(0, 115, 0, 28)
+czopeksgui.Font = Enum.Font.Creepster
+czopeksgui.Text = "czopek's gui"
+czopeksgui.TextColor3 = Color3.fromRGB(255, 255, 255)
+czopeksgui.TextSize = 22.000
+czopeksgui.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+czopeksgui.TextWrapped = true
+CzopekCredit.Name = "CzopekCredit"
+CzopekCredit.Parent = Topbar
+CzopekCredit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CzopekCredit.BackgroundTransparency = 1.000
+CzopekCredit.Position = UDim2.new(0.0116932467, 0, 7.27973223, 0)
+CzopekCredit.Size = UDim2.new(0, 89, 0, 28)
+CzopekCredit.Font = Enum.Font.GothamSemibold
+CzopekCredit.Text = "czopek#7877 :troll:"
+CzopekCredit.TextColor3 = Color3.fromRGB(255, 255, 255)
+CzopekCredit.TextSize = 11.000
+CzopekCredit.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+CloseGUI.Name = "CloseGUI"
+CloseGUI.Parent = Topbar
+CloseGUI.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+CloseGUI.BorderSizePixel = 0
+CloseGUI.Position = UDim2.new(0.81947273, 0, 0.0723697469, 0)
+CloseGUI.Size = UDim2.new(0, 89, 0, 28)
+CloseGUI.ZIndex = 2
+CloseGUI.Font = Enum.Font.GothamSemibold
+CloseGUI.Text = ""
+CloseGUI.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseGUI.TextScaled = true
+CloseGUI.TextSize = 14.000
+CloseGUI.TextWrapped = true
+Shadow_5.Name = "Shadow"
+Shadow_5.Parent = CloseGUI
+Shadow_5.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Shadow_5.BorderSizePixel = 0
+Shadow_5.Size = UDim2.new(1, 0, 1, 4)
+TextLabel_5.Parent = CloseGUI
+TextLabel_5.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.5, 0, 0.514285743, 0)
+TextLabel_5.Size = UDim2.new(1, -20, 1.08027208, -20)
+TextLabel_5.ZIndex = 2
+TextLabel_5.Font = Enum.Font.GothamSemibold
+TextLabel_5.Text = "X"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 30.000
+TextLabel_5.TextWrapped = true
+PlayerTab.Name = "PlayerTab"
+PlayerTab.Parent = MainFrame
+PlayerTab.BackgroundColor3 = Color3.fromRGB(28, 29, 28)
+PlayerTab.BorderColor3 = Color3.fromRGB(27, 42, 53)
+PlayerTab.BorderSizePixel = 0
+PlayerTab.Position = UDim2.new(0.218344122, 0, 0.120691359, 0)
+PlayerTab.Size = UDim2.new(0, 386, 0, 240)
+PlayerTab.Visible = false
+PlayerTabBar.Name = "PlayerTabBar"
+PlayerTabBar.Parent = PlayerTab
+PlayerTabBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerTabBar.BackgroundTransparency = 1.000
+PlayerTabBar.Position = UDim2.new(0.0159210041, 0, -0.00119946792, 0)
+PlayerTabBar.Size = UDim2.new(0, 369, 0, 34)
+PlayerTabBar.Image = "rbxassetid://3570695787"
+PlayerTabBar.ImageColor3 = Color3.fromRGB(118, 17, 131)
+PlayerTabBar.ScaleType = Enum.ScaleType.Slice
+PlayerTabBar.SliceCenter = Rect.new(100, 100, 100, 100)
+PlayerTabName.Name = "PlayerTabName"
+PlayerTabName.Parent = PlayerTabBar
+PlayerTabName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerTabName.BackgroundTransparency = 1.000
+PlayerTabName.Position = UDim2.new(0.342867076, 0, 0.0738495737, 0)
+PlayerTabName.Size = UDim2.new(0, 115, 0, 28)
+PlayerTabName.Font = Enum.Font.GothamSemibold
+PlayerTabName.Text = "Players"
+PlayerTabName.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerTabName.TextScaled = true
+PlayerTabName.TextSize = 34.000
+PlayerTabName.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+PlayerTabName.TextWrapped = true
+TeleportToPlayer.Name = "TeleportToPlayer"
+TeleportToPlayer.Parent = PlayerTab
+TeleportToPlayer.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+TeleportToPlayer.BorderSizePixel = 0
+TeleportToPlayer.Position = UDim2.new(0.298304439, 0, 0.362500012, 0)
+TeleportToPlayer.Size = UDim2.new(0, 154, 0, 34)
+TeleportToPlayer.ZIndex = 2
+TeleportToPlayer.Font = Enum.Font.GothamSemibold
+TeleportToPlayer.Text = ""
+TeleportToPlayer.TextColor3 = Color3.fromRGB(255, 255, 255)
+TeleportToPlayer.TextScaled = true
+TeleportToPlayer.TextSize = 14.000
+TeleportToPlayer.TextWrapped = true
+Shadow_6.Name = "Shadow"
+Shadow_6.Parent = TeleportToPlayer
+Shadow_6.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_6.BorderSizePixel = 0
+Shadow_6.Size = UDim2.new(1, 0, 1, 4)
+TextLabel_6.Parent = TeleportToPlayer
+TextLabel_6.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.477381527, 0, 0.485714197, 0)
+TextLabel_6.Size = UDim2.new(0.951717377, -20, 1.11111116, -20)
+TextLabel_6.ZIndex = 2
+TextLabel_6.Font = Enum.Font.GothamSemibold
+TextLabel_6.Text = "Go To Player"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+PlayerName.Name = "PlayerName"
+PlayerName.Parent = PlayerTab
+PlayerName.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+PlayerName.BorderSizePixel = 0
+PlayerName.Position = UDim2.new(0.293123096, 0, 0.560416639, 0)
+PlayerName.Size = UDim2.new(0, 154, 0, 35)
+PlayerName.Font = Enum.Font.SourceSans
+PlayerName.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.Text = ""
+PlayerName.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.TextSize = 14.000
+UpdateCash.Name = "UpdateCash"
+UpdateCash.Parent = PlayerTab
+UpdateCash.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+UpdateCash.BorderSizePixel = 0
+UpdateCash.Position = UDim2.new(0.298304439, 0, 0.175000012, 0)
+UpdateCash.Size = UDim2.new(0, 154, 0, 34)
+UpdateCash.ZIndex = 2
+UpdateCash.Font = Enum.Font.GothamSemibold
+UpdateCash.Text = ""
+UpdateCash.TextColor3 = Color3.fromRGB(255, 255, 255)
+UpdateCash.TextScaled = true
+UpdateCash.TextSize = 14.000
+UpdateCash.TextWrapped = true
+Shadow_7.Name = "Shadow"
+Shadow_7.Parent = UpdateCash
+Shadow_7.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_7.BorderSizePixel = 0
+Shadow_7.Size = UDim2.new(1, 0, 1, 4)
+TextLabel_7.Parent = UpdateCash
+TextLabel_7.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.477381527, 0, 0.485714197, 0)
+TextLabel_7.Size = UDim2.new(0.951717377, -20, 1.11111116, -20)
+TextLabel_7.ZIndex = 2
+TextLabel_7.Font = Enum.Font.GothamSemibold
+TextLabel_7.Text = "Update Cash"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+Money.Name = "Money"
+Money.Parent = PlayerTab
+Money.BackgroundColor3 = Color3.fromRGB(148, 175, 150)
+Money.BackgroundTransparency = 1.000
+Money.Position = UDim2.new(0.130802616, 0, 0.749463141, 0)
+Money.Size = UDim2.new(0, 280, 0, 50)
+Money.Font = Enum.Font.GothamSemibold
+Money.Text = "No Player Selected."
+Money.TextColor3 = Color3.fromRGB(148, 175, 150)
+Money.TextScaled = true
+Money.TextSize = 14.000
+Money.TextWrapped = true
+MainTab.Name = "MainTab"
+MainTab.Parent = MainFrame
+MainTab.BackgroundColor3 = Color3.fromRGB(28, 29, 28)
+MainTab.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainTab.BorderSizePixel = 0
+MainTab.Position = UDim2.new(0.218344122, 0, 0.120691359, 0)
+MainTab.Size = UDim2.new(0, 386, 0, 240)
+MainTabbar.Name = "MainTabbar"
+MainTabbar.Parent = MainTab
+MainTabbar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainTabbar.BackgroundTransparency = 1.000
+MainTabbar.Position = UDim2.new(0.0159210041, 0, -0.00119946792, 0)
+MainTabbar.Size = UDim2.new(0, 369, 0, 34)
+MainTabbar.Image = "rbxassetid://3570695787"
+MainTabbar.ImageColor3 = Color3.fromRGB(118, 17, 131)
+MainTabbar.ScaleType = Enum.ScaleType.Slice
+MainTabbar.SliceCenter = Rect.new(100, 100, 100, 100)
+MainTabName.Name = "MainTabName"
+MainTabName.Parent = MainTabbar
+MainTabName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainTabName.BackgroundTransparency = 1.000
+MainTabName.Position = UDim2.new(0.342867076, 0, 0.0738495737, 0)
+MainTabName.Size = UDim2.new(0, 115, 0, 28)
+MainTabName.Font = Enum.Font.GothamSemibold
+MainTabName.Text = "Main"
+MainTabName.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainTabName.TextScaled = true
+MainTabName.TextSize = 34.000
+MainTabName.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+MainTabName.TextWrapped = true
+AutoDrop.Name = "Auto Drop"
+AutoDrop.Parent = MainTab
+AutoDrop.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+AutoDrop.BorderSizePixel = 0
+AutoDrop.Position = UDim2.new(0.298304439, 0, 0.174999997, 0)
+AutoDrop.Size = UDim2.new(0, 154, 0, 34)
+AutoDrop.ZIndex = 2
+AutoDrop.Font = Enum.Font.GothamSemibold
+AutoDrop.Text = ""
+AutoDrop.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoDrop.TextScaled = true
+AutoDrop.TextSize = 14.000
+AutoDrop.TextWrapped = true
+Shadow_8.Name = "Shadow"
+Shadow_8.Parent = AutoDrop
+Shadow_8.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_8.BorderSizePixel = 0
+Shadow_8.Size = UDim2.new(1, 0, 1, 4)
+TextLabel_8.Parent = AutoDrop
+TextLabel_8.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(0.477381527, 0, 0.485714197, 0)
+TextLabel_8.Size = UDim2.new(0.951717377, -20, 1.11111116, -20)
+TextLabel_8.ZIndex = 2
+TextLabel_8.Font = Enum.Font.GothamSemibold
+TextLabel_8.Text = "Auto Drop"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
+CashAura.Name = "Cash Aura"
+CashAura.Parent = MainTab
+CashAura.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+CashAura.BorderSizePixel = 0
+CashAura.Position = UDim2.new(0.298304439, 0, 0.362500012, 0)
+CashAura.Size = UDim2.new(0, 154, 0, 34)
+CashAura.ZIndex = 2
+CashAura.Font = Enum.Font.GothamSemibold
+CashAura.Text = ""
+CashAura.TextColor3 = Color3.fromRGB(255, 255, 255)
+CashAura.TextScaled = true
+CashAura.TextSize = 14.000
+CashAura.TextWrapped = true
+Shadow_9.Name = "Shadow"
+Shadow_9.Parent = CashAura
+Shadow_9.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_9.BorderSizePixel = 0
+Shadow_9.Size = UDim2.new(1, 0, 1, 4)
+TextLabel_9.Parent = CashAura
+TextLabel_9.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0.477381527, 0, 0.485714197, 0)
+TextLabel_9.Size = UDim2.new(0.951717377, -20, 1.11111116, -20)
+TextLabel_9.ZIndex = 2
+TextLabel_9.Font = Enum.Font.GothamSemibold
+TextLabel_9.Text = "Cash Aura"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+FPSBooster.Name = "FPS Booster"
+FPSBooster.Parent = MainTab
+FPSBooster.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+FPSBooster.BorderSizePixel = 0
+FPSBooster.Position = UDim2.new(0.298304439, 0, 0.558333337, 0)
+FPSBooster.Size = UDim2.new(0, 154, 0, 34)
+FPSBooster.ZIndex = 2
+FPSBooster.Font = Enum.Font.GothamSemibold
+FPSBooster.Text = ""
+FPSBooster.TextColor3 = Color3.fromRGB(255, 255, 255)
+FPSBooster.TextScaled = true
+FPSBooster.TextSize = 14.000
+FPSBooster.TextWrapped = true
+Shadow_10.Name = "Shadow"
+Shadow_10.Parent = FPSBooster
+Shadow_10.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_10.BorderSizePixel = 0
+Shadow_10.Size = UDim2.new(1, 0, 1, 4)
+TextLabel_10.Parent = FPSBooster
+TextLabel_10.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(0.477381527, 0, 0.485714197, 0)
+TextLabel_10.Size = UDim2.new(0.951717377, -20, 1.11111116, -20)
+TextLabel_10.ZIndex = 2
+TextLabel_10.Font = Enum.Font.GothamSemibold
+TextLabel_10.Text = "FPS Booster"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 14.000
+TextLabel_10.TextWrapped = true
+StartCrasher.Name = "Start Crasher"
+StartCrasher.Parent = MainTab
+StartCrasher.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+StartCrasher.BorderSizePixel = 0
+StartCrasher.Position = UDim2.new(0.298304439, 0, 0.741666675, 0)
+StartCrasher.Size = UDim2.new(0, 154, 0, 34)
+StartCrasher.ZIndex = 2
+StartCrasher.Font = Enum.Font.GothamSemibold
+StartCrasher.Text = ""
+StartCrasher.TextColor3 = Color3.fromRGB(255, 255, 255)
+StartCrasher.TextScaled = true
+StartCrasher.TextSize = 14.000
+StartCrasher.TextWrapped = true
+Shadow_11.Name = "Shadow"
+Shadow_11.Parent = StartCrasher
+Shadow_11.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_11.BorderSizePixel = 0
+Shadow_11.Size = UDim2.new(1, 0, 1, 4)
+TextLabel_11.Parent = StartCrasher
+TextLabel_11.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_11.BorderSizePixel = 0
+TextLabel_11.Position = UDim2.new(0.477381527, 0, 0.485714197, 0)
+TextLabel_11.Size = UDim2.new(0.951717377, -20, 1.11111116, -20)
+TextLabel_11.ZIndex = 2
+TextLabel_11.Font = Enum.Font.GothamSemibold
+TextLabel_11.Text = "Start Crasher"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.TextScaled = true
+TextLabel_11.TextSize = 14.000
+TextLabel_11.TextWrapped = true
+AutoDropOnOffBackground.Name = "AutoDropOnOffBackground"
+AutoDropOnOffBackground.Parent = MainTab
+AutoDropOnOffBackground.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+AutoDropOnOffBackground.BorderSizePixel = 0
+AutoDropOnOffBackground.Position = UDim2.new(0.727979302, 0, 0.187388361, 0)
+AutoDropOnOffBackground.Size = UDim2.new(0.243900284, 0, 0.0938616619, 4)
+AutoDropOnOff.Name = "AutoDropOnOff"
+AutoDropOnOff.Parent = MainTab
+AutoDropOnOff.AnchorPoint = Vector2.new(0.5, 0.5)
+AutoDropOnOff.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoDropOnOff.BackgroundTransparency = 1.000
+AutoDropOnOff.BorderColor3 = Color3.fromRGB(27, 42, 53)
+AutoDropOnOff.BorderSizePixel = 0
+AutoDropOnOff.Position = UDim2.new(0.844412863, 0, 0.240193427, 0)
+AutoDropOnOff.Size = UDim2.new(0.271300316, -20, 0.195069626, -20)
+AutoDropOnOff.ZIndex = 2
+AutoDropOnOff.Font = Enum.Font.GothamSemibold
+AutoDropOnOff.Text = "Disabled"
+AutoDropOnOff.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoDropOnOff.TextScaled = true
+AutoDropOnOff.TextSize = 14.000
+AutoDropOnOff.TextWrapped = true
+CashAuraOnOffBackGround.Name = "CashAuraOnOffBackGround"
+CashAuraOnOffBackGround.Parent = MainTab
+CashAuraOnOffBackGround.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+CashAuraOnOffBackGround.BorderSizePixel = 0
+CashAuraOnOffBackGround.Position = UDim2.new(0.727979302, 0, 0.383221716, 0)
+CashAuraOnOffBackGround.Size = UDim2.new(0.243900284, 0, 0.0938616619, 4)
+CashAuraOnOff.Name = "CashAuraOnOff"
+CashAuraOnOff.Parent = MainTab
+CashAuraOnOff.AnchorPoint = Vector2.new(0.5, 0.5)
+CashAuraOnOff.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CashAuraOnOff.BackgroundTransparency = 1.000
+CashAuraOnOff.BorderColor3 = Color3.fromRGB(27, 42, 53)
+CashAuraOnOff.BorderSizePixel = 0
+CashAuraOnOff.Position = UDim2.new(0.844412863, 0, 0.431860119, 0)
+CashAuraOnOff.Size = UDim2.new(0.271300316, -20, 0.195069626, -20)
+CashAuraOnOff.ZIndex = 2
+CashAuraOnOff.Font = Enum.Font.GothamSemibold
+CashAuraOnOff.Text = "Disabled"
+CashAuraOnOff.TextColor3 = Color3.fromRGB(255, 255, 255)
+CashAuraOnOff.TextScaled = true
+CashAuraOnOff.TextSize = 14.000
+CashAuraOnOff.TextWrapped = true
+Fly.Name = "Fly"
+Fly.Parent = MainTab
+Fly.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Fly.BorderSizePixel = 0
+Fly.Position = UDim2.new(0, 0, 0.174999997, 0)
+Fly.Size = UDim2.new(0, 102, 0, 34)
+Fly.ZIndex = 2
+Fly.Font = Enum.Font.GothamSemibold
+Fly.Text = ""
+Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextScaled = true
+Fly.TextSize = 14.000
+Fly.TextWrapped = true
+Shadow_12.Name = "Shadow"
+Shadow_12.Parent = Fly
+Shadow_12.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_12.BorderSizePixel = 0
+Shadow_12.Size = UDim2.new(1, 0, 1, 4)
+TextLabel_12.Parent = Fly
+TextLabel_12.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_12.BorderSizePixel = 0
+TextLabel_12.Position = UDim2.new(0.473556519, 0, 0.485714197, 0)
+TextLabel_12.Size = UDim2.new(1.00853026, -20, 1.11111116, -20)
+TextLabel_12.ZIndex = 2
+TextLabel_12.Font = Enum.Font.GothamSemibold
+TextLabel_12.Text = "Fly [C]"
+TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.TextScaled = true
+TextLabel_12.TextSize = 14.000
+TextLabel_12.TextWrapped = true
+Speed.Name = "Speed"
+Speed.Parent = MainTab
+Speed.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Speed.BorderSizePixel = 0
+Speed.Position = UDim2.new(0, 0, 0.362500012, 0)
+Speed.Size = UDim2.new(0, 102, 0, 34)
+Speed.ZIndex = 2
+Speed.Font = Enum.Font.GothamSemibold
+Speed.Text = ""
+Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+Speed.TextScaled = true
+Speed.TextSize = 14.000
+Speed.TextWrapped = true
+Shadow_13.Name = "Shadow"
+Shadow_13.Parent = Speed
+Shadow_13.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_13.BorderSizePixel = 0
+Shadow_13.Size = UDim2.new(1, 0, 1, 4)
+TextLabel_13.Parent = Speed
+TextLabel_13.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.BackgroundTransparency = 1.000
+TextLabel_13.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_13.BorderSizePixel = 0
+TextLabel_13.Position = UDim2.new(0.473556519, 0, 0.485714197, 0)
+TextLabel_13.Size = UDim2.new(1.00853026, -20, 1.11111116, -20)
+TextLabel_13.ZIndex = 2
+TextLabel_13.Font = Enum.Font.GothamSemibold
+TextLabel_13.Text = "Speed [Z]"
+TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.TextScaled = true
+TextLabel_13.TextSize = 14.000
+TextLabel_13.TextWrapped = true
+DeleteCash.Name = "Delete Cash"
+DeleteCash.Parent = MainTab
+DeleteCash.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+DeleteCash.BorderSizePixel = 0
+DeleteCash.Position = UDim2.new(0, 0, 0.566666663, 0)
+DeleteCash.Size = UDim2.new(0, 102, 0, 34)
+DeleteCash.ZIndex = 2
+DeleteCash.Font = Enum.Font.GothamSemibold
+DeleteCash.Text = ""
+DeleteCash.TextColor3 = Color3.fromRGB(255, 255, 255)
+DeleteCash.TextScaled = true
+DeleteCash.TextSize = 14.000
+DeleteCash.TextWrapped = true
+Shadow_14.Name = "Shadow"
+Shadow_14.Parent = DeleteCash
+Shadow_14.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_14.BorderSizePixel = 0
+Shadow_14.Size = UDim2.new(1, 0, 1, 4)
+TextLabel_14.Parent = DeleteCash
+TextLabel_14.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.BackgroundTransparency = 1.000
+TextLabel_14.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_14.BorderSizePixel = 0
+TextLabel_14.Position = UDim2.new(0.473556519, 0, 0.485714197, 0)
+TextLabel_14.Size = UDim2.new(1.00853026, -20, 1.11111116, -20)
+TextLabel_14.ZIndex = 2
+TextLabel_14.Font = Enum.Font.GothamSemibold
+TextLabel_14.Text = "Delete Cash"
+TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.TextScaled = true
+TextLabel_14.TextSize = 14.000
+TextLabel_14.TextWrapped = true
+MiscTab.Name = "MiscTab"
+MiscTab.Parent = MainFrame
+MiscTab.BackgroundColor3 = Color3.fromRGB(28, 29, 28)
+MiscTab.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MiscTab.BorderSizePixel = 0
+MiscTab.Position = UDim2.new(0.218344122, 0, 0.120691359, 0)
+MiscTab.Size = UDim2.new(0, 386, 0, 240)
+MiscTab.Visible = false
+MiscTabBar.Name = "MiscTabBar"
+MiscTabBar.Parent = MiscTab
+MiscTabBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MiscTabBar.BackgroundTransparency = 1.000
+MiscTabBar.Position = UDim2.new(0.0159210041, 0, -0.00119946792, 0)
+MiscTabBar.Size = UDim2.new(0, 369, 0, 34)
+MiscTabBar.Image = "rbxassetid://3570695787"
+MiscTabBar.ImageColor3 = Color3.fromRGB(118, 17, 131)
+MiscTabBar.ScaleType = Enum.ScaleType.Slice
+MiscTabBar.SliceCenter = Rect.new(100, 100, 100, 100)
+MiscTabName.Name = "MiscTabName"
+MiscTabName.Parent = MiscTabBar
+MiscTabName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MiscTabName.BackgroundTransparency = 1.000
+MiscTabName.Position = UDim2.new(0.256146193, 0, 0.0738498494, 0)
+MiscTabName.Size = UDim2.new(0, 195, 0, 28)
+MiscTabName.Font = Enum.Font.GothamSemibold
+MiscTabName.Text = "Quick Teleports"
+MiscTabName.TextColor3 = Color3.fromRGB(255, 255, 255)
+MiscTabName.TextScaled = true
+MiscTabName.TextSize = 34.000
+MiscTabName.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+MiscTabName.TextWrapped = true
+AdminBase.Name = "Admin Base"
+AdminBase.Parent = MiscTab
+AdminBase.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+AdminBase.BorderSizePixel = 0
+AdminBase.Position = UDim2.new(0.0155440411, 0, 0.216666669, 0)
+AdminBase.Size = UDim2.new(0, 102, 0, 34)
+AdminBase.ZIndex = 2
+AdminBase.Font = Enum.Font.GothamSemibold
+AdminBase.Text = ""
+AdminBase.TextColor3 = Color3.fromRGB(255, 255, 255)
+AdminBase.TextScaled = true
+AdminBase.TextSize = 14.000
+AdminBase.TextWrapped = true
+Shadow_15.Name = "Shadow"
+Shadow_15.Parent = AdminBase
+Shadow_15.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_15.BorderSizePixel = 0
+Shadow_15.Size = UDim2.new(1, 0, 1, 4)
+TextLabel_15.Parent = AdminBase
+TextLabel_15.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.BackgroundTransparency = 1.000
+TextLabel_15.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_15.BorderSizePixel = 0
+TextLabel_15.Position = UDim2.new(0.473556519, 0, 0.485714197, 0)
+TextLabel_15.Size = UDim2.new(1.00853026, -20, 1.11111116, -20)
+TextLabel_15.ZIndex = 2
+TextLabel_15.Font = Enum.Font.GothamSemibold
+TextLabel_15.Text = "Admin Base"
+TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.TextScaled = true
+TextLabel_15.TextSize = 14.000
+TextLabel_15.TextWrapped = true
+Bank.Name = "Bank"
+Bank.Parent = MiscTab
+Bank.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Bank.BorderSizePixel = 0
+Bank.Position = UDim2.new(0.360103607, 0, 0.216666669, 0)
+Bank.Size = UDim2.new(0, 102, 0, 34)
+Bank.ZIndex = 2
+Bank.Font = Enum.Font.GothamSemibold
+Bank.Text = ""
+Bank.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bank.TextScaled = true
+Bank.TextSize = 14.000
+Bank.TextWrapped = true
+Shadow_16.Name = "Shadow"
+Shadow_16.Parent = Bank
+Shadow_16.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_16.BorderSizePixel = 0
+Shadow_16.Size = UDim2.new(1, 0, 1, 4)
+TextLabel_16.Parent = Bank
+TextLabel_16.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.BackgroundTransparency = 1.000
+TextLabel_16.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_16.BorderSizePixel = 0
+TextLabel_16.Position = UDim2.new(0.473556519, 0, 0.485714197, 0)
+TextLabel_16.Size = UDim2.new(1.00853026, -20, 1.11111116, -20)
+TextLabel_16.ZIndex = 2
+TextLabel_16.Font = Enum.Font.GothamSemibold
+TextLabel_16.Text = "Bank"
+TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.TextScaled = true
+TextLabel_16.TextSize = 14.000
+TextLabel_16.TextWrapped = true
+Basketball.Name = "Basketball"
+Basketball.Parent = MiscTab
+Basketball.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Basketball.BorderSizePixel = 0
+Basketball.Position = UDim2.new(0.681347132, 0, 0.216666669, 0)
+Basketball.Size = UDim2.new(0, 102, 0, 34)
+Basketball.ZIndex = 2
+Basketball.Font = Enum.Font.GothamSemibold
+Basketball.Text = ""
+Basketball.TextColor3 = Color3.fromRGB(255, 255, 255)
+Basketball.TextScaled = true
+Basketball.TextSize = 14.000
+Basketball.TextWrapped = true
+Shadow_17.Name = "Shadow"
+Shadow_17.Parent = Basketball
+Shadow_17.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_17.BorderSizePixel = 0
+Shadow_17.Size = UDim2.new(1, 0, 1, 4)
+TextLabel_17.Parent = Basketball
+TextLabel_17.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.BackgroundTransparency = 1.000
+TextLabel_17.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_17.BorderSizePixel = 0
+TextLabel_17.Position = UDim2.new(0.473556519, 0, 0.485714197, 0)
+TextLabel_17.Size = UDim2.new(1.00853026, -20, 1.11111116, -20)
+TextLabel_17.ZIndex = 2
+TextLabel_17.Font = Enum.Font.GothamSemibold
+TextLabel_17.Text = "Basketball"
+TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.TextScaled = true
+TextLabel_17.TextSize = 14.000
+TextLabel_17.TextWrapped = true
+SecretArea.Name = "Secret Area"
+SecretArea.Parent = MiscTab
+SecretArea.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+SecretArea.BorderSizePixel = 0
+SecretArea.Position = UDim2.new(0.352331579, 0, 0.449999988, 0)
+SecretArea.Size = UDim2.new(0, 102, 0, 34)
+SecretArea.ZIndex = 2
+SecretArea.Font = Enum.Font.GothamSemibold
+SecretArea.Text = ""
+SecretArea.TextColor3 = Color3.fromRGB(255, 255, 255)
+SecretArea.TextScaled = true
+SecretArea.TextSize = 14.000
+SecretArea.TextWrapped = true
+Shadow_18.Name = "Shadow"
+Shadow_18.Parent = SecretArea
+Shadow_18.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_18.BorderSizePixel = 0
+Shadow_18.Size = UDim2.new(1, 0, 1, 4)
+TextLabel_18.Parent = SecretArea
+TextLabel_18.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.BackgroundTransparency = 1.000
+TextLabel_18.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_18.BorderSizePixel = 0
+TextLabel_18.Position = UDim2.new(0.473556519, 0, 0.485714197, 0)
+TextLabel_18.Size = UDim2.new(1.00853026, -20, 1.11111116, -20)
+TextLabel_18.ZIndex = 2
+TextLabel_18.Font = Enum.Font.GothamSemibold
+TextLabel_18.Text = "Secret Area"
+TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.TextScaled = true
+TextLabel_18.TextSize = 14.000
+TextLabel_18.TextWrapped = true
+Club.Name = "Club"
+Club.Parent = MiscTab
+Club.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Club.BorderSizePixel = 0
+Club.Position = UDim2.new(0.0155440411, 0, 0.449999988, 0)
+Club.Size = UDim2.new(0, 102, 0, 34)
+Club.ZIndex = 2
+Club.Font = Enum.Font.GothamSemibold
+Club.Text = ""
+Club.TextColor3 = Color3.fromRGB(255, 255, 255)
+Club.TextScaled = true
+Club.TextSize = 14.000
+Club.TextWrapped = true
+Shadow_19.Name = "Shadow"
+Shadow_19.Parent = Club
+Shadow_19.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_19.BorderSizePixel = 0
+Shadow_19.Size = UDim2.new(1, 0, 1, 4)
+TextLabel_19.Parent = Club
+TextLabel_19.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_19.BackgroundTransparency = 1.000
+TextLabel_19.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_19.BorderSizePixel = 0
+TextLabel_19.Position = UDim2.new(0.473556519, 0, 0.485714197, 0)
+TextLabel_19.Size = UDim2.new(1.00853026, -20, 1.11111116, -20)
+TextLabel_19.ZIndex = 2
+TextLabel_19.Font = Enum.Font.GothamSemibold
+TextLabel_19.Text = "Club"
+TextLabel_19.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_19.TextScaled = true
+TextLabel_19.TextSize = 14.000
+TextLabel_19.TextWrapped = true
+TrainTrack.Name = "Train Track"
+TrainTrack.Parent = MiscTab
+TrainTrack.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+TrainTrack.BorderSizePixel = 0
+TrainTrack.Position = UDim2.new(0.681347191, 0, 0.449999988, 0)
+TrainTrack.Size = UDim2.new(0, 102, 0, 34)
+TrainTrack.ZIndex = 2
+TrainTrack.Font = Enum.Font.GothamSemibold
+TrainTrack.Text = ""
+TrainTrack.TextColor3 = Color3.fromRGB(255, 255, 255)
+TrainTrack.TextScaled = true
+TrainTrack.TextSize = 14.000
+TrainTrack.TextWrapped = true
+Shadow_20.Name = "Shadow"
+Shadow_20.Parent = TrainTrack
+Shadow_20.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_20.BorderSizePixel = 0
+Shadow_20.Size = UDim2.new(1, 0, 1, 4)
+TextLabel_20.Parent = TrainTrack
+TextLabel_20.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_20.BackgroundTransparency = 1.000
+TextLabel_20.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_20.BorderSizePixel = 0
+TextLabel_20.Position = UDim2.new(0.473556519, 0, 0.485714197, 0)
+TextLabel_20.Size = UDim2.new(1.00853026, -20, 1.11111116, -20)
+TextLabel_20.ZIndex = 2
+TextLabel_20.Font = Enum.Font.GothamSemibold
+TextLabel_20.Text = "Train Track"
+TextLabel_20.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_20.TextScaled = true
+TextLabel_20.TextSize = 14.000
+TextLabel_20.TextWrapped = true
+Prison.Name = "Prison"
+Prison.Parent = MiscTab
+Prison.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Prison.BorderSizePixel = 0
+Prison.Position = UDim2.new(0.360103607, 0, 0.666666627, 0)
+Prison.Size = UDim2.new(0, 102, 0, 34)
+Prison.ZIndex = 2
+Prison.Font = Enum.Font.GothamSemibold
+Prison.Text = ""
+Prison.TextColor3 = Color3.fromRGB(255, 255, 255)
+Prison.TextScaled = true
+Prison.TextSize = 14.000
+Prison.TextWrapped = true
+Shadow_21.Name = "Shadow"
+Shadow_21.Parent = Prison
+Shadow_21.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_21.BorderSizePixel = 0
+Shadow_21.Size = UDim2.new(1, 0, 1, 4)
+TextLabel_21.Parent = Prison
+TextLabel_21.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_21.BackgroundTransparency = 1.000
+TextLabel_21.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_21.BorderSizePixel = 0
+TextLabel_21.Position = UDim2.new(0.473556519, 0, 0.485714197, 0)
+TextLabel_21.Size = UDim2.new(1.00853026, -20, 1.11111116, -20)
+TextLabel_21.ZIndex = 2
+TextLabel_21.Font = Enum.Font.GothamSemibold
+TextLabel_21.Text = "Prison"
+TextLabel_21.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_21.TextScaled = true
+TextLabel_21.TextSize = 14.000
+TextLabel_21.TextWrapped = true
+UsefulTab.Name = "UsefulTab"
+UsefulTab.Parent = MainFrame
+UsefulTab.BackgroundColor3 = Color3.fromRGB(28, 29, 28)
+UsefulTab.BorderColor3 = Color3.fromRGB(27, 42, 53)
+UsefulTab.BorderSizePixel = 0
+UsefulTab.Position = UDim2.new(0.218344122, 0, 0.120691359, 0)
+UsefulTab.Size = UDim2.new(0, 386, 0, 240)
+UsefulTab.Visible = false
+UsefulTabBar.Name = "UsefulTabBar"
+UsefulTabBar.Parent = UsefulTab
+UsefulTabBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UsefulTabBar.BackgroundTransparency = 1.000
+UsefulTabBar.Position = UDim2.new(0.0159210041, 0, -0.00119946792, 0)
+UsefulTabBar.Size = UDim2.new(0, 369, 0, 34)
+UsefulTabBar.Image = "rbxassetid://3570695787"
+UsefulTabBar.ImageColor3 = Color3.fromRGB(118, 17, 131)
+UsefulTabBar.ScaleType = Enum.ScaleType.Slice
+UsefulTabBar.SliceCenter = Rect.new(100, 100, 100, 100)
+PlayerTabName_2.Name = "PlayerTabName"
+PlayerTabName_2.Parent = UsefulTabBar
+PlayerTabName_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerTabName_2.BackgroundTransparency = 1.000
+PlayerTabName_2.Position = UDim2.new(0.342867076, 0, 0.0738495737, 0)
+PlayerTabName_2.Size = UDim2.new(0, 115, 0, 28)
+PlayerTabName_2.Font = Enum.Font.GothamSemibold
+PlayerTabName_2.Text = "IMPORTANT"
+PlayerTabName_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerTabName_2.TextScaled = true
+PlayerTabName_2.TextSize = 34.000
+PlayerTabName_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+PlayerTabName_2.TextWrapped = true
+FpsCap5.Name = "FpsCap5"
+FpsCap5.Parent = UsefulTab
+FpsCap5.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+FpsCap5.BorderSizePixel = 0
+FpsCap5.Position = UDim2.new(0.0366463959, 0, 0.175000012, 0)
+FpsCap5.Size = UDim2.new(0, 154, 0, 34)
+FpsCap5.ZIndex = 2
+FpsCap5.Font = Enum.Font.GothamSemibold
+FpsCap5.Text = ""
+FpsCap5.TextColor3 = Color3.fromRGB(255, 255, 255)
+FpsCap5.TextScaled = true
+FpsCap5.TextSize = 14.000
+FpsCap5.TextWrapped = true
+Shadow_22.Name = "Shadow"
+Shadow_22.Parent = FpsCap5
+Shadow_22.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_22.BorderSizePixel = 0
+Shadow_22.Size = UDim2.new(1, 0, 1, 4)
+TextLabel_22.Parent = FpsCap5
+TextLabel_22.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_22.BackgroundTransparency = 1.000
+TextLabel_22.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_22.BorderSizePixel = 0
+TextLabel_22.Position = UDim2.new(0.477381527, 0, 0.485714197, 0)
+TextLabel_22.Size = UDim2.new(0.951717377, -20, 1.11111116, -20)
+TextLabel_22.ZIndex = 2
+TextLabel_22.Font = Enum.Font.GothamSemibold
+TextLabel_22.Text = "FPS Lock [5]"
+TextLabel_22.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_22.TextScaled = true
+TextLabel_22.TextSize = 14.000
+TextLabel_22.TextWrapped = true
+FpsCap30.Name = "FpsCap30"
+FpsCap30.Parent = UsefulTab
+FpsCap30.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+FpsCap30.BorderSizePixel = 0
+FpsCap30.Position = UDim2.new(0.497786283, 0, 0.170833349, 0)
+FpsCap30.Size = UDim2.new(0, 154, 0, 34)
+FpsCap30.ZIndex = 2
+FpsCap30.Font = Enum.Font.GothamSemibold
+FpsCap30.Text = ""
+FpsCap30.TextColor3 = Color3.fromRGB(255, 255, 255)
+FpsCap30.TextScaled = true
+FpsCap30.TextSize = 14.000
+FpsCap30.TextWrapped = true
+Shadow_23.Name = "Shadow"
+Shadow_23.Parent = FpsCap30
+Shadow_23.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_23.BorderSizePixel = 0
+Shadow_23.Size = UDim2.new(1, 0, 1, 4)
+TextLabel_23.Parent = FpsCap30
+TextLabel_23.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_23.BackgroundTransparency = 1.000
+TextLabel_23.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_23.BorderSizePixel = 0
+TextLabel_23.Position = UDim2.new(0.477381527, 0, 0.485714197, 0)
+TextLabel_23.Size = UDim2.new(0.951717377, -20, 1.11111116, -20)
+TextLabel_23.ZIndex = 2
+TextLabel_23.Font = Enum.Font.GothamSemibold
+TextLabel_23.Text = "FPS Lock [30]"
+TextLabel_23.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_23.TextScaled = true
+TextLabel_23.TextSize = 14.000
+TextLabel_23.TextWrapped = true
+setFps.Name = "setFps"
+setFps.Parent = UsefulTab
+setFps.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+setFps.BorderSizePixel = 0
+setFps.Position = UDim2.new(0.298304439, 0, 0.720833302, 0)
+setFps.Size = UDim2.new(0, 144, 0, 39)
+setFps.ZIndex = 2
+setFps.Font = Enum.Font.GothamSemibold
+setFps.Text = ""
+setFps.TextColor3 = Color3.fromRGB(255, 255, 255)
+setFps.TextScaled = true
+setFps.TextSize = 14.000
+setFps.TextWrapped = true
+Shadow_24.Name = "Shadow"
+Shadow_24.Parent = setFps
+Shadow_24.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_24.BorderSizePixel = 0
+Shadow_24.Size = UDim2.new(1, 0, 0.987179458, 4)
+TextLabel_24.Parent = setFps
+TextLabel_24.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_24.BackgroundTransparency = 1.000
+TextLabel_24.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_24.BorderSizePixel = 0
+TextLabel_24.Position = UDim2.new(0.477380961, 0, 0.486959606, 0)
+TextLabel_24.Size = UDim2.new(0.966382682, -20, 1.1908834, -20)
+TextLabel_24.ZIndex = 2
+TextLabel_24.Font = Enum.Font.GothamSemibold
+TextLabel_24.Text = "Set FPS"
+TextLabel_24.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_24.TextScaled = true
+TextLabel_24.TextSize = 14.000
+TextLabel_24.TextWrapped = true
+fpsamount.Name = "fpsamount"
+fpsamount.Parent = UsefulTab
+fpsamount.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+fpsamount.BorderSizePixel = 0
+fpsamount.Position = UDim2.new(0.341097027, 0, 0.560416698, 0)
+fpsamount.Size = UDim2.new(0, 110, 0, 35)
+fpsamount.Font = Enum.Font.SourceSans
+fpsamount.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+fpsamount.Text = ""
+fpsamount.TextColor3 = Color3.fromRGB(255, 255, 255)
+fpsamount.TextSize = 14.000
+PlayerTabName_3.Name = "PlayerTabName"
+PlayerTabName_3.Parent = UsefulTab
+PlayerTabName_3.BackgroundColor3 = Color3.fromRGB(147, 49, 10)
+PlayerTabName_3.BackgroundTransparency = 1.000
+PlayerTabName_3.Position = UDim2.new(0.0418277383, 0, 0.886349499, 0)
+PlayerTabName_3.Size = UDim2.new(0, 369, 0, 28)
+PlayerTabName_3.Font = Enum.Font.GothamSemibold
+PlayerTabName_3.Text = "Enable FPS Unlocker in EXECUTOR settings!"
+PlayerTabName_3.TextColor3 = Color3.fromRGB(157, 5, 0)
+PlayerTabName_3.TextScaled = true
+PlayerTabName_3.TextSize = 34.000
+PlayerTabName_3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+PlayerTabName_3.TextWrapped = true
+
+
+
+
+--// PREDROPPED GUI
+local sx1 = Instance.new("ScreenGui")
+local droppedframe = Instance.new("Frame")
+local framebar = Instance.new("Frame")
+local ElsGui = Instance.new("TextLabel")
+local ElsGui_2 = Instance.new("TextLabel")
+local _0 = Instance.new("TextLabel")
+sx1.Name = "sx1"
+sx1.Parent = game:GetService("CoreGui")
+droppedframe.Name = "droppedframe"
+droppedframe.Parent = sx1
+droppedframe.Active = true
+droppedframe.BackgroundColor3 = Color3.fromRGB(28, 29, 28)
+droppedframe.BorderColor3 = Color3.fromRGB(27, 42, 53)
+droppedframe.BorderSizePixel = 0
+droppedframe.Draggable = true
+droppedframe.Position = UDim2.new(0.834971189, -202, 0.775282085, -43)
+droppedframe.Size = UDim2.new(0, 218, 0, 110)
+framebar.Name = "framebar"
+framebar.Parent = droppedframe
+framebar.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+framebar.BorderSizePixel = 0
+framebar.Position = UDim2.new(0.000377130084, 0, -0.0053661, 0)
+framebar.Size = UDim2.new(0, 217, 0, 34)
+ElsGui.Name = "ElsGui"
+ElsGui.Parent = framebar
+ElsGui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ElsGui.BackgroundTransparency = 1.000
+ElsGui.Position = UDim2.new(-0.00103159249, 0, 0.0738495737, 0)
+ElsGui.Size = UDim2.new(0, 115, 0, 28)
+ElsGui.Font = Enum.Font.Creepster
+ElsGui.Text = "el's gui"
+ElsGui.TextColor3 = Color3.fromRGB(255, 255, 255)
+ElsGui.TextScaled = true
+ElsGui.TextSize = 14.000
+ElsGui.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+ElsGui.TextWrapped = true
+ElsGui_2.Name = "ElsGui"
+ElsGui_2.Parent = framebar
+ElsGui_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ElsGui_2.BackgroundTransparency = 1.000
+ElsGui_2.Position = UDim2.new(0.469014466, 0, 0.0738495737, 0)
+ElsGui_2.Size = UDim2.new(0, 115, 0, 28)
+ElsGui_2.Font = Enum.Font.Creepster
+ElsGui_2.Text = "Press O to Hide"
+ElsGui_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ElsGui_2.TextScaled = true
+ElsGui_2.TextSize = 14.000
+ElsGui_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+ElsGui_2.TextWrapped = true
+_0.Name = "_0"
+_0.Parent = droppedframe
+_0.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_0.BackgroundTransparency = 1.000
+_0.Position = UDim2.new(0.0383555293, 0, 0.380312324, 0)
+_0.Size = UDim2.new(0, 200, 0, 50)
+_0.Font = Enum.Font.GothamSemibold
+_0.Text = "0"
+_0.TextColor3 = Color3.fromRGB(255, 255, 255)
+_0.TextScaled = true
+_0.TextSize = 14.000
+_0.TextWrapped = true
+
+local players = game:GetService("Players")
+local plr = players.LocalPlayer
+
+local function Convert(amount)
+	amount = tostring(amount)
+	return amount:reverse():gsub("%d%d%d", "%1,"):reverse():gsub("^,", "")
+end
+
+plr.Idled:connect(function()
+    game:GetService("VirtualUser"):Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+    wait(1)
+    game:GetService("VirtualUser"):Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+
+
+Main_2.MouseButton1Click:Connect(function()
+	MainTab.Visible = true
+	MiscTab.Visible = false
+	PlayerTab.Visible = false 
+	UsefulTab.Visible = false
+end)
+
+Misc.MouseButton1Click:Connect(function()
+	MainTab.Visible = false
+	MiscTab.Visible = true
+	PlayerTab.Visible = false 
+	UsefulTab.Visible = false
+end)
+
+Player.MouseButton1Click:Connect(function()
+	MainTab.Visible = false
+	MiscTab.Visible = false
+	PlayerTab.Visible = true 
+	UsefulTab.Visible = false
+end)
+
+Useful.MouseButton1Click:Connect(function()
+	MainTab.Visible = false
+	MiscTab.Visible = false
+	PlayerTab.Visible = false 
+	UsefulTab.Visible = true
+end)
+
+CloseGUI.MouseButton1Click:Connect(function()
+	MainFrame.Visible = false
+end)
+
+plr:GetMouse().KeyDown:Connect(function(Key)
+	if Key == "v" then 
+		MainFrame.Visible = not MainFrame.Visible
+	end
+end)
+
+plr:GetMouse().KeyDown:Connect(function(Key)
+	if Key == "o" then 
+		droppedframe.Visible = not droppedframe.Visible
+	end
+end)
+
+Fly.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/W9K/roblox-scripts/main/DHC/Fly.lua"))()
+end)
+
+Speed.MouseButton1Click:Connect(function()
+	SpeedActive = false 
+	plr:GetMouse().KeyDown:Connect(function(Key)
+		if Key == "z" then 
+			SpeedActive = not SpeedActive
+		end
+	end)
+end)
+
+DeleteCash.MouseButton1Click:Connect(function()
+	for i,v in pairs(game.Workspace.Ignored.Drop:GetChildren()) do 
+		if v.Name == "MoneyDrop" then 
+			v:Destroy()
+		end
+	end
+end)
+
+AutoDrop.MouseButton1Click:Connect(function()
+	if AutoDropOnOff.Text == "Disabled" then 
+		AutoDropOnOff.Text = "Enabled" 
+		AutoDropOnOffBackground.BackgroundColor3 = Color3.fromRGB(118, 17, 131)
+	else
+		AutoDropOnOff.Text = "Disabled"
+		AutoDropOnOffBackground.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+	end
+end)
+
+CashAura.MouseButton1Click:Connect(function()
+	if CashAuraOnOff.Text == "Disabled" then 
+		CashAuraOnOff.Text = "Enabled" 
+		CashAuraOnOffBackGround.BackgroundColor3 = Color3.fromRGB(118, 17, 131)
+	else
+		CashAuraOnOff.Text = "Disabled"
+		CashAuraOnOffBackGround.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+	end
+end)
+
+FPSBooster.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/W9K/roblox-scripts/main/fpsshit.lua"))()
+end)
+
+StartCrasher.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
+end)
+
+AdminBase.MouseButton1Click:Connect(function()
+	plr.Character.HumanoidRootPart.CFrame = CFrame.new(-869.27, -25.55, -649.53)
+end)
+
+Bank.MouseButton1Click:Connect(function()
+	plr.Character.HumanoidRootPart.CFrame = CFrame.new(-416.42, 29.81, -284.22)
+end)
+
+Basketball.MouseButton1Click:Connect(function()
+	plr.Character.HumanoidRootPart.CFrame = CFrame.new(-931.85, 22.19, -482.46)
+end)
+
+Club.MouseButton1Click:Connect(function()
+	plr.Character.HumanoidRootPart.CFrame = CFrame.new(-264.50, 7.19, -421.29)
+end)
+
+Prison.MouseButton1Click:Connect(function()
+	plr.Character.HumanoidRootPart.CFrame = CFrame.new(-333.24, 29.11, -89.12)
+end)
+
+SecretArea.MouseButton1Click:Connect(function()
+	plr.Character.HumanoidRootPart.CFrame = CFrame.new(-102.13, -51.33, 146.27)
+end)
+
+TrainTrack.MouseButton1Click:Connect(function()
+	plr.Character.HumanoidRootPart.CFrame = CFrame.new(591.56, 55.20, -114.32)
+end)
+
+PlayerName.FocusLost:connect(function()
+	for i,v in pairs(game.Players:GetChildren()) do
+		if (string.sub(string.lower(v.Name),1,string.len(PlayerName.Text))) == string.lower(PlayerName.Text) then
+			PlayerName.Text = v.Name
+			Money.Text = Convert(players:FindFirstChild(v.Name).DataFolder.Currency.Value).."$"
+		end
+	end
+end)
+
+TeleportToPlayer.MouseButton1Click:Connect(function()
+	plr.Character.HumanoidRootPart.CFrame = players:FindFirstChild(PlayerName.Text).Character.Head.CFrame 
+end)
+
+UpdateCash.MouseButton1Click:Connect(function()
+	Money.Text = Convert(players:FindFirstChild(PlayerName.Text).DataFolder.Currency.Value).."$"
+end)
+
+FpsCap30.MouseButton1Click:Connect(function()
+	setfpscap(30)
+end)
+
+FpsCap5.MouseButton1Click:Connect(function()
+	setfpscap(5)
+end)
+
+setFps.MouseButton1Click:Connect(function()
+	setfpscap(tonumber(fpsamount.Text))
+end)
+
+players.PlayerAdded:Connect(function(NewPlr)
+	repeat wait() until players:FindFirstChild(NewPlr.Name)
+	game.StarterGui:SetCore("SendNotification",{Title ="Player Joined",Text =NewPlr.Name.." has joined the server!",Duration =20})
+	local JoinSound = Instance.new("Sound",plr.Character)
+	JoinSound.SoundId = "rbxassetid://3398620867"
+	JoinSound.Volume = 5
+	JoinSound:Play()
+	wait(3)
+	JoinSound:Destroy()
+end)
+
+game:GetService("RunService").Stepped:Connect(function()
+	
+	if SpeedActive == true then 
+		if plr.Character.Humanoid.MoveDirection.Magnitude > 0 then
+			plr.Character:TranslateBy(plr.Character.Humanoid.MoveDirection * 0.8)
+		end
+	end
+	
+	
+	if CashAuraOnOff.Text == "Enabled" then 
+		for i,v in pairs(game.Workspace.Ignored.Drop:GetChildren()) do
+			if v:IsA('Part') and v.Name == "MoneyDrop" then
+				if (v.Position - plr.Character.HumanoidRootPart.Position).Magnitude <= 13.5 then
+					fireclickdetector(v:FindFirstChild('ClickDetector'))
+				end
+			end
+		end
+	end
+	
+	
+	if AutoDropOnOff.Text == "Enabled" then
+		game:GetService("ReplicatedStorage").MainEvent:FireServer("DropMoney","10000")
+	end
+	
+	
+	pcall(function()
+		local amount = 0
+		for i,v in pairs(game.Workspace.Ignored.Drop:GetChildren()) do
+			if v.Name == "MoneyDrop" then
+				local cash = string.split(v.BillboardGui.TextLabel.Text,"$")[2]
+				if string.match(cash,',') then
+					amount = amount + cash:gsub("%,","")
+				else
+					amount = amount + cash
+				end
+			end
+		end
+		_0.Text = Convert(amount).."$"
+	end)
+	
+end)
